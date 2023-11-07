@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+body {
+    font-family: Oswald, serif;
+    background: linear-gradient(10deg, #ffe357 0%, #f2f2f2 91%);
+}
+
+.p {
+    color: black;
+}
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(97, 100, 99);
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-toggler {
+    background-color: rgb(97, 100, 99); 
+}
+
+.sidebar {
+    color: rgb(48, 43, 57);
+    background: linear-gradient(270deg, #f1de7d 0%, #ffffff 91%); 
+}
+
+.card {
+    background: linear-gradient(270deg, #f1de7d 0%, #ffffff 91%); 
+
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(48, 43, 57);
+}
+
+.slide-text, 
+.footer-text {
+    color: rgb(7, 7, 7);
+    margin: auto auto;
+}
+
+footer {
+    background: linear-gradient(270deg, #f1de7d 0%, #ffffff 91%); 
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
